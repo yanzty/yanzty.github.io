@@ -1,0 +1,128 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#profile {
+    text-align: center;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profile .bio {
+    margin-top: 1rem;
+}
+
+#portfolio .project {
+    margin-bottom: 2rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contact ul li {
+    margin: 0 1rem;
+}
+
+#contact ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#contact ul li a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
